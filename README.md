@@ -16,12 +16,12 @@ The solution I propose is two-pronged: the data model solution and the cloud-bas
 
 ### Data Model Solution
 
-####1. Pre-processing the features before feature engineering
+#### 1. Pre-processing the features before feature engineering
 a. The GPS bearing needs to be converted into absolute coordinate system reference to help detect anomalies better. (Discussion on the concept here: https://pro.arcgis.com/en/pro-app/help/mapping/properties/coordinate-systems-and-projections.htm)
 b. The features of accelerometer and gyrometer need to be linked with the known road roughness of the road being traversed. The DPWH National Road Roughness Survey data (https://www.carmudi.com.ph/journal/dpwh-conducts-national-road-roughness-survey/), for example, will help assign weights to rough roads so that jerking movements from the accel and gyro readings will not be introduced with noise from roads with inherent roughness and require jerking movements during the navigation of driver and customer. 
 c. Greater weight must be assigned to trips with longer time in seconds or sequences (this is from a related lit outlined in the ipynb file)
 
-####2. Test different models highlighting different features from raw dataset 
+#### 2. Test different models highlighting different features from raw dataset 
 Researching Grab's publications, rules-based algorithms have been implemented previously (https://www.grab.com/sg/blog/grabs-telematics-show-safer-more-comfortable-rides-in-a-year/) with positive responses. I assume there is a rule-based algorithm that already exists. 
 
 Here are the models I intend to test out and the features that will be highlighted in them: 
