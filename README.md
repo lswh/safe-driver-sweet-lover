@@ -51,4 +51,4 @@ This message will be sent back and encoded as an additional safety label from th
 
 
 ## Timeline
-I won't be able to finish this model submission in time for June 17, but I intend to work on the sample dataset until October this year. =) 
+I won't be able to finish this model submission in time for June 17, but I intend to work on the sample dataset after the deadline to test out the models. =) 
